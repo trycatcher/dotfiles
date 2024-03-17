@@ -1,0 +1,9 @@
+session_name: Single window
+windows:
+- window_name: Host management Flake
+  shell_command_before:
+    - cd ~/                       # run as a first command in all panes
+  panes:
+    - shell_command:              # pane no. 1
+        - cd setup
+        - nvim flake.nix
